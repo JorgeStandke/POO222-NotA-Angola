@@ -1,29 +1,29 @@
 Seleção : Angola
 
 Jogadores : 
-Tony Cabaça	Goleiro	
-Nsesani Simão	Goleiro	
-Jota Bé	Goleiro	Angola 
-Bastos		Defesa	 
-Isaac Costa	Defesa	
-Wilson Gaspar	Defesa	
-Nandinho	Defesa	
-Núrio Fortuna	Defesa	
-Quinito	Defesa	Angola 
-Diógenes João	Defesa	
-Herenilson	Médio	
-Fredy		Médio	
-Chow		Médio	
-Ito		Médio	
-Macaia		Médio	
-Além		Médio	
-Yano		Médio	
-Vá		Avançado	
-Geraldo		Avançado	
-Gelson		Avançado	
-Mateus Galiano	Avançado	
-Wilson Eduardo	Avançado	
-Fábio Abreu	Avançado
+Tony Cabaça	Goleiro		1° de Agosto
+Nsesani Simão	Goleiro		Academica Lobito
+Jota Bé		Goleiro		Kabuscorp
+Bastos		Defesa		Lazio
+Isaac Costa	Defesa		1° de Agosto
+Wilson Gaspar	Defesa		Petro de Luanda
+Nandinho	Defesa		Progresso
+Núrio Fortuna	Defesa		Charleroi
+Quinito		Defesa		Interclube
+Diógenes João	Defesa		Petro de Luanda
+Herenilson	Médio		Petro de Luanda
+Fredy		Médio		Antalyaspor
+Chow		Médio		Belenenses
+Ito		Médio		Interclube
+Macaia		Médio		1° de Agosto
+Além		Médio		Petro de Luanda
+Yano		Médio		Progresso
+Vá		Avançado	Leixões
+Geraldo		Avançado	Al-Ahly
+Gelson		Avançado	Antalyaspor
+Mateus Galiano	Avançado	Boavista
+Wilson Eduardo	Avançado	Braga
+Fábio Abreu	Avançado	Moreirense
 	
 Pedro Gonçalves	Treinador
 Vasco Évora	Treinador de Goleiros
