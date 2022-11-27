@@ -2,7 +2,7 @@ package Marco4.Models;
 
 import java.util.Date;
 
-public class Player {
+public class Player extends Person{
     private String nickname;
     private int number;
     private Double weight;
@@ -11,7 +11,7 @@ public class Player {
     private String position;
     private String currentClub;
     private int callsCount;
-    
+
     public String getNickname() {
         return nickname;
     }
