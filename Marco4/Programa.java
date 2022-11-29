@@ -45,8 +45,7 @@ public class Programa implements NationalTeamStats, NationalTeamInfos {
 
     @Override
     public int getYoungestPlayer() {
-
-        return 0;
+        return country.getSoccerTeam().youngestPlayer();
     }
 
     @Override
