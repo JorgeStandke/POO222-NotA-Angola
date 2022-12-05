@@ -1,7 +1,6 @@
 package Marco4.Interfaces;
 import java.nio.file.Path;
-
-import javax.imageio.ImageIO;
+import java.awt.Image;
 
 public interface NationalTeamInfos {
 	abstract int getHowManyMembers();
@@ -11,7 +10,7 @@ public interface NationalTeamInfos {
 	abstract String getPlayer(int number);
 	abstract String getPressOfficerContacts();
 	abstract String getCountryName();
-	abstract ImageIO getFlagImage();
+	abstract Image getFlagImage();
 	abstract Path getTechnicalCommittee();
 	abstract NationalTeamStats getStatsResponsible();
 	

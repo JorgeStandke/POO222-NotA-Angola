@@ -50,4 +50,12 @@ public class Team {
         };
         return age;
     }
+
+    public double averageAge(){
+        int aux = 0;
+        for (int chave : players.keySet()) {      
+           aux += getPlayers(chave).getAge();
+        };
+        return aux / playersQuantity();
+    }
 }

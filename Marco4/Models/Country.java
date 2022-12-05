@@ -7,6 +7,10 @@ public class Country {
 	private Team soccerTeam;
 	private PressOfficer pressOfficer;
 	private ImageIO flagImage;
+
+	public int getCommitteeQuantity(){
+		return getSoccerTeam().playersQuantity() + getSoccerTeam().technicalsquantity() + 1; //pressOfficer     
+	}
 	
 	public PressOfficer getPressOfficer() {
 		return pressOfficer;
