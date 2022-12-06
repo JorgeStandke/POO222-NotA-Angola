@@ -3,9 +3,18 @@ package Marco4.Models;
 import java.util.HashMap;
 
 public class Team {
-    HashMap<Integer, Player> players;
-    HashMap<String, Technical> technicals;
+    HashMap<Integer, Player> players = new HashMap<>();
+    HashMap<String, Technical> technicals = new HashMap<>();
    
+    public Team(){
+        //lido json, ter salvo todos os objetos de players
+        //for each
+        //this.players.put(player.getNumber(), Player);
+        
+        //lido json, ter salvo todos os objetos de technicals
+        //for each
+        //this.technicals.put(technical.getName(), Technical);
+    }
 
     public int playersQuantity(){
         return this.players.size();
@@ -20,6 +29,7 @@ public class Team {
     }
 
     public void setPlayers(Player player) {
+        //fazer um método para salvar no json o player novo
         this.players.put(player.getNumber(), player);
     }
 
@@ -28,6 +38,7 @@ public class Team {
     }
 
     public void setTechnicals(Technical technical) {
+        //fazer um método para salvar no json o technical novo
         this.technicals.put(technical.getName(), technical);
     }
 
