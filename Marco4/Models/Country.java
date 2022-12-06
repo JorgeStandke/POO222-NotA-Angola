@@ -1,10 +1,15 @@
 package Marco4.Models;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.awt.FlowLayout;
 import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
 import javax.swing.ImageIcon;
 import java.awt.Image;
 
@@ -47,6 +52,18 @@ public class Country {
 
 	public void setPressOfficer(PressOfficer pressOfficer) {
 		//fazer um método para salvar no json o pressofficer novo
+		try {
+    		JSONParser parser = new JSONParser();
+        	Object obj = parser.parse(new FileReader("src/resources/Angola.json"));
+        	JSONObject jsonObject = (JSONObject) obj;
+        	jsonObject.put("name", pressOfficer.getName());
+        	jsonObject.put("tel1", pressOfficer.getTel1());
+        	jsonObject.put("tel2", pressOfficer.getTel2());
+        	jsonObject.put("emailAccount", pressOfficer.getEmailAccount());
+        	jsonObject.put("name", pressOfficer.getAge());
+		} catch (Exception e) {
+			throw new RuntimeException(e);
+		}
 		this.pressOfficer = pressOfficer;
 	}
 
