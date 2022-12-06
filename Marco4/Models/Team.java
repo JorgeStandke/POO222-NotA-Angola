@@ -7,6 +7,7 @@ import org.json.simple.parser.JSONParser;
 import org.xml.sax.Parser;
 
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.util.Iterator;
 
 public class Team {
@@ -50,6 +51,8 @@ public class Team {
         	jsonObject.put("birthDate", player.getBirthDate());
         	jsonObject.put("position", player.getPosition());
         	jsonObject.put("currentClub", player.getCurrentClub());
+        	FileWriter file = new FileWriter("src/resources/Angola.json");
+            file.write(jsonObject.toJSONString());
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
@@ -69,6 +72,8 @@ public class Team {
         	jsonObject.put("name", technical.getName());
         	jsonObject.put("nickname", technical.getNickname());
         	jsonObject.put("birthDate", technical.getAge());
+        	FileWriter file = new FileWriter("src/resources/Angola.json");
+            file.write(jsonObject.toJSONString());
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}

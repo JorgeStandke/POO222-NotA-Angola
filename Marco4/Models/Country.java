@@ -1,6 +1,7 @@
 package Marco4.Models;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.awt.FlowLayout;
 import javax.imageio.ImageIO;
@@ -61,6 +62,8 @@ public class Country {
         	jsonObject.put("tel2", pressOfficer.getTel2());
         	jsonObject.put("emailAccount", pressOfficer.getEmailAccount());
         	jsonObject.put("name", pressOfficer.getAge());
+        	FileWriter file = new FileWriter("src/resources/Angola.json");
+            file.write(jsonObject.toJSONString());
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
