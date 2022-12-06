@@ -11,8 +11,20 @@ public class Player extends Person{
     private String position;
     private String currentClub;
     private int callsCount;
-
-    public String getNickname() {
+    
+	public Player(String name, int age, String nickname, int number, Double weight, Double height, Date birthDate,
+			String position, String currentClub, int callsCount) {
+		super(name, age);
+		this.nickname = nickname;
+		this.number = number;
+		this.weight = weight;
+		this.height = height;
+		this.birthDate = birthDate;
+		this.position = position;
+		this.currentClub = currentClub;
+		this.callsCount = callsCount;
+	}
+	public String getNickname() {
         return nickname;
     }
     public void setNickname(String nickname) {

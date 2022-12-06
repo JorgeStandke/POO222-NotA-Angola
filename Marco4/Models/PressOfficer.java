@@ -6,7 +6,13 @@ public class PressOfficer extends Person{
     private String tel2;
     private String emailAccount;
 
-    public String getEmailAccount() {
+    public PressOfficer(String name, int age, String tel1, String tel2, String emailAccount) {
+		super(name, age);
+		this.tel1 = tel1;
+		this.tel2 = tel2;
+		this.emailAccount = emailAccount;
+	}
+	public String getEmailAccount() {
         return emailAccount;
     }
     public void setEmailAccount(String emailAccount) {

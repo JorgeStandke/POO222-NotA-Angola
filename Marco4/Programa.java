@@ -1,10 +1,14 @@
 package Marco4;
 import java.nio.file.Path;
+import org.json.*;
 import javax.swing.ImageIcon;
 import javax.imageio.ImageIO;
 import java.awt.Image;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+
+import org.json.JSONObject;
+
 import java.io.File;
 import java.io.IOException;
 import java.awt.FlowLayout;
@@ -15,11 +19,18 @@ public class Programa implements NationalTeamInfos {
 
 	private static Country country = new Country("Angola");
     private static final String FLAG_PATH = "src/flag.png";
-
     private int questionsCount = 0;
+    private static final String angolaJsonPath = "src/resources/Angola.json";
+    
+    public static void main(String[] args) {
+		System.out.println(country.getSoccerTeam().getPlayers(10));
+	}
 
+    public Programa(PressOfficer officer, int questionsCount) {
+		super();
+	}
 
-    private void methodCount(){
+	private void methodCount(){
 
         questionsCount++;
 
@@ -52,15 +63,15 @@ public class Programa implements NationalTeamInfos {
     @Override
     public String getPlayer(int number) {
         methodCount();
-        // TODO Auto-generated method stub
-        return null;
+        JSONObject JSON = new JSONObject(angolaJsonPath);
+        String data = JSON.get("name").toString();
+        return data;
     }
 
     @Override
     public String getPressOfficerContacts() {
         methodCount();
-        // TODO Auto-generated method stub
-        return null;
+        return "";
     }
 
     @Override
@@ -95,7 +106,6 @@ public class Programa implements NationalTeamInfos {
     @Override
     public Path getTechnicalCommittee() {
         methodCount();
-        // TODO Auto-generated method stub
         return null;
     }
 

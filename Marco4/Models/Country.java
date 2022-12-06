@@ -7,6 +7,16 @@ public class Country {
 	private Team soccerTeam;
 	private PressOfficer pressOfficer;
 	private ImageIO flagImage;
+	
+	
+
+	public Country(String countryName, Team soccerTeam, PressOfficer pressOfficer, ImageIO flagImage) {
+		super();
+		this.countryName = "Angola";
+		this.soccerTeam = new Team();
+		this.pressOfficer = getPressOfficer();
+		this.flagImage = flagImage;
+	}
 
 	public int getCommitteeQuantity(){
 		return getSoccerTeam().playersQuantity() + getSoccerTeam().technicalsquantity() + 1; //pressOfficer     
